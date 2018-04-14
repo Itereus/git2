@@ -2,9 +2,27 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>GITHUB</title>
+    <title>GITHUB 2</title>
 </head>
 <body>
+    <div class="container">
+        <button id="alertBtn"> Message me </button>
+        <input id="msgBox" type="text">
+    </div> 
+
+    <script>
+    function message(msg) {
+        alert(msg)
+    }
     
+    let btn = document.getElementById("alertBtn");
+    let msgBox = document.getElementById("msgBox").innerText;
+
+    btn.addEventListener("click", () => {
+        message(msgBox);
+        console.log(msgBox);
+    })
+    </script>
+
 </body>
 </html>
